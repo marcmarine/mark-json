@@ -9,7 +9,7 @@ def from_mark(markdown_content):
 
   sections = parse_markdown_structure(content)
 
-  tree = {
+  json = {
     'title': metadata.get('title', ''),
     'author': metadata.get('author', ''),
     'language': metadata.get('language', ''),
@@ -18,7 +18,7 @@ def from_mark(markdown_content):
     'sections': sections
   }
 
-  return tree
+  return json
 
 def split_frontmatter(markdown_content):
   frontmatter_match = re.match(r'^---\s*\n(.*?)\n---\s*\n(.*)', markdown_content, re.DOTALL)

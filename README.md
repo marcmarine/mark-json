@@ -1,13 +1,13 @@
-# Mark Tree
+# Mark Json
 
-The **Mark Tree** library is a markdown to JSON converter that transforms Markdown documents into a structured JSON format, ideal for working with long documents like books.
+The **Mark Json** library is a markdown to JSON converter that transforms Markdown documents into a structured JSON format, ideal for working with long documents like books.
 
 ## Installation
 
 Install the library using pip:
 
 ```bash
-pip install mark-tree
+pip install mark-json
 ```
 
 ## Basic Usage
@@ -15,14 +15,14 @@ pip install mark-tree
 Basic conversion example:
 
 ```python
-from mark_tree import from_mark
+from mark_json import from_mark
 
 with open('file.md', 'r', encoding='utf-8') as f:
   markdown_content = f.read()
 
-json_tree = from_mark(markdown_content)
+json = from_mark(markdown_content)
 
-print(json_tree)
+print(json)
 ```
 
 ## Conversion Rules
